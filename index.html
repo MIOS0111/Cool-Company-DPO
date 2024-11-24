@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="js/scripts.js"></script>
+    <header class="header">
+        <div class="container">
+            <div class="wrapper-inner">
+                <div class="offer">
+                    <img src="img/logo.png" alt="logo">
+                    <h1 class="offer-title">С помощью нас вы сможете создать то, о чем</h1>
+                    <h1 class="offer-texts">желаете!</h1>
+                    <p class="offer-text">Наши возможности + опыт позволят 
+                        вам достичь огромного успеха. Мы верим в вас! и знаем это на все 100%. 
+                        Вас не остановить!</p>
+                    <a href="#">Узнать больше...</a>
+                </div>
+                <img class="img1" src="img/header-img.png" alt="picture">
+            </div>
+        </div>
+    </header>
+    <div>
+        <div class="head1">
+            <h2 class="head1">Что вам необходимо?</h2>
+        </div>
+        <div class="container">
+            <div class="element">
+                <img src="img/f3.png" alt="f3">
+                <h3>Первый блок</h3>
+                <p class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+            <div class="element">
+                <img src="img/f4.png" alt="f4">
+                <h3>Второй блок</h3>
+                <p class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+            <div class="element">
+                <img src="img/f5.png" alt="f5">
+                <h3>Третий блок</h3>
+                <p class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+        </div>
+    </div>
+    <div class="grey_container"> <!-- тут нужно делать херню-->
+        <h2 class="head1" id="head_colored">Форма заказа продукта или услуги</h2>
+        <form action="#">
+            <input type="text" id="name" placeholder="Имя" onchange="checkName()">
+            <input type="text" id="email" placeholder="Введите свой e-mail" onchange="checkEmail()">
+            <input type="text" id="pnum" placeholder="Телефон" onchange="checkPhone()">
+            <input type="date" id="date">
+            <button type="submit" onclick="outputData()" id="button1">Отправить заказ!</button>
+        </form>
+    </div> 
+    <div class="grey_container">
+        <h2 class="head1">Форма заказа обратного звонка</h2>
+        <form action="#">
+            <input type="text" id="name" placeholder="Имя" minlength="2" maxlength="20" 
+            pattern="^[A-Za-zА-Яа-яЁё]+$" required> <!--чтобы можно было ввести только буквы-->
+            <input type="text" id="email" placeholder="Введите свой e-mail" required 
+            pattern="^\S+@\S+\.\S+$">
+            <input type="text" id="pnum" placeholder="Телефон" pattern="^\+7[1-9]{10}$" required>
+            <input type="text" id="theme" placeholder="Какая тема Вас интересует?" minlength="8"
+             maxlenght="150" required>
+            <button type="submit">Отправить вопрос!</button>
+        </form>
+    </div>
+    <footer>
+        <p class="end">© Все на этом сайте защищено</p>
+    </footer>
+</body>
+</html>

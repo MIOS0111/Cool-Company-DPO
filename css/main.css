@@ -1,0 +1,173 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #201b2d;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+}
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 900;
+}
+
+p {
+	line-height: 1.65em;
+}
+
+.header {
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 57%);
+}
+  
+
+.container {
+	display:flex;
+	width: 768px;
+	margin: 0 auto;
+	justify-content: space-between; 
+	flex-direction: row;
+	padding-top: 2%;
+	padding-bottom: 4%;
+}
+
+.offer {
+	width: 45%;
+}
+
+.wrapper-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.offer-title{
+	margin-top: 6%;
+	font-size: 22px;
+	font-weight: 600px;
+	line-height: 30px; 
+	color: white;
+}
+
+.offer-texts {
+	font-size: 40px;
+	font-weight: 900px;
+	line-height: 60px;
+	color: white;
+}
+
+.offer-text {
+	font-size: 12px;
+	font-weight: 700px;
+	color: white;
+	width: 85%;
+}
+
+.img1 {
+	width: 300px;
+	height: 260px;
+}
+
+a {
+	display: inline-block; 
+    background: yellow; 
+    padding: 1rem 1.5rem; 
+    text-decoration: none; 
+	color: black;
+	font-family: 'Ubuntu';
+}
+
+button{
+	width: 280px;
+	padding: 10px;
+    margin: 5px 0;
+	background: yellow; 
+	border: 0;
+}
+
+.head1 {
+	text-align: center;
+	padding-top: 2%;
+	padding-bottom: 1%;
+}
+
+.element {
+	text-align: center;
+	justify-content: center;
+}
+
+.grey_container {
+	background: rgb(212, 226, 229);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+form {
+	width: 300px;
+	padding: 10px;
+}
+
+input[type=text], input[type=date] {
+	width: 280px;
+	padding: 10px;
+    margin: 5px 0;
+  }
+
+footer{
+	height: 70px;
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 57%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.end {
+	font-size: 12px;
+	font-weight: 700px;
+	color: white;
+}
+
+.caption{
+	width: 200px;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) 
+{
+    
+}
+/* Medium devices (tablets, 768px and up)*/
+@media screen and (max-width: 768px) 
+{
+    .container {
+		flex-wrap: wrap;
+		width: auto;
+		justify-content: space-around;
+		padding-left: 15px;
+	}
+
+	.img1 {
+		width: 250px;
+		height: 220px;
+	}
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media screen and (max-width: 576px) 
+{
+    .container {
+		flex-direction: column;
+	}
+
+	.wrapper-inner {
+		flex-direction: column;
+	}
+
+	.offer{
+		width: 100%;
+	}
+}
